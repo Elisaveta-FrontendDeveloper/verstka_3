@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа - Свободный кондитер</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="craft.css">
+</head>
+<body>
+    <!-- Шапка сайта с навигацией -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"></div>
+                Свободный кондитер
+            </a>
+
+            <!-- Навигационное меню -->
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="craft.html">Начинки</a></li>
+                    <li><a href="reviews.html">Отзывы</a></li>
+                    <li><a href="order.html" class="active">Корзина</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <h1 class="page-title">Оформление заказа</h1>
+
+        <div id="cartContent">        </div>
+
+        <!-- Форма заказа (показывается только если есть товары в корзине) -->
+        <div id="orderForm" style="display: none;">
+            <div class="order-form-container">
+                <h2>Ваши контактные данные</h2>
+                <form id="customerForm">
+                    <div class="form-group">
+                        <label for="customerName">Имя:</label>
+                        <input type="text" id="customerName" name="name" required placeholder="Введите ваше имя">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="customerPhone">Телефон:</label>
+                        <input type="tel" id="customerPhone" name="phone" required placeholder="+7 (XXX) XXX-XX-XX">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="orderDate">Дата получения:</label>
+                        <input type="date" id="orderDate" name="date" required min="">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="customerComment">Комментарий к заказу:</label>
+                        <textarea id="customerComment" name="comment" placeholder="Дополнительные пожелания..." rows="4"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="confirm-order">Подтвердить заказ</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© Свободный кондитер, 2025. Домашняя кондитерская.</p>
+        <div class="social-icons">
+            <a href="#" aria-label="Telegram">💬</a>
+            <a href="#" aria-label="VK">👥</a>
+            <a href="#" aria-label="WhatsApp">💬</a>
+        </div>
+        <p>Телефон: +7 (921) 383-33-XX</p>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script src="order.js"></script>
+</body>
+</html>

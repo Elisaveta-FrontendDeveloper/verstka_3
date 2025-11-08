@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор начинки</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="craft.css">
+
+
+</head>
+
+<body>
+    <!-- Шапка сайта с навигацией -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"></div>
+                Свободный кондитер
+            </a>
+
+            <!-- Навигационное меню -->
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="craft.html" class="active">Начинки</a></li>
+                    <li><a href="reviews.html">Отзывы</a></li>
+                    <li><a href="order.html">Корзина</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="content">
+        <h1 class="page-title">Наши начинки</h1>
+        <p class="page-description">Выберите свою любимую начинку для торта или капкейков. Все начинки готовятся из
+            натуральных ингредиентов без искусственных добавок.</p>
+
+        <div class="fillings-grid">
+            <!-- Начинка 1 -->
+            <div class="filling-card">
+                <div class="filling-image">
+                    <img src="фото начинок/орео.jpg" alt="Орео">
+                </div>
+                <div class="filling-content">
+                    <h3 class="filling-title">Орео</h3>
+                    <p class="filling-description">Вкуснейший шоколадный бисквит в сочетании с сырным кремом с
+                        добавлением кусочков печенья орео. Хруст печенек в нежном креме добавляет особую изюминку этому
+                        торту.</p>
+                    <div class="filling-price">1800 руб/кг</div>
+                    <button class="order-btn" data-filling="Орео"
+                        data-description="Шоколадный бисквит, сырный крем и кусочки орео"
+                        data-price="1800">Заказать</button>
+                </div>
+            </div>
+
+            <!-- Начинка 2 -->
+            <div class="filling-card">
+                <div class="filling-image">
+                    <img src="фото начинок/медовик.jpg" alt="Медовик">
+                </div>
+                <div class="filling-content">
+                    <h3 class="filling-title">Медовик</h3>
+                    <p class="filling-description">Сладкие и нежные медовые коржи, пропитанные лёгким кремом из сливок и
+                        сметаны. Лёгкий вкус, который
+                        понравится и детям, и взрослым.</p>
+                    <div class="filling-price">1600 руб/кг</div>
+                    <button class="order-btn" data-filling="Медовик"
+                        data-description="Медовые коржи и сливочно-сметанный крем" data-price="1600">Заказать</button>
+                </div>
+            </div>
+
+            <!-- Начинка 3 -->
+            <div class="filling-card">
+                <div class="filling-image">
+                    <img src="фото начинок/наполеон.jpg" alt="Наполеон">
+                </div>
+                <div class="filling-content">
+                    <h3 class="filling-title">Наполеон</h3>
+                    <p class="filling-description">Всеми любимая классика. Хрустящие сливочные коржи,
+                        классический заварной крем. Умеренное количество сахара.
+                    </p>
+                    <div class="filling-price">1600 руб/кг</div>
+                    <button class="order-btn" data-filling="Наполеон" data-description="Хрустящие коржи и заварной крем"
+                        data-price="1600">Заказать</button>
+                </div>
+            </div>
+
+            <!-- Начинка 4 -->
+            <div class="filling-card">
+                <div class="filling-image">
+                    <img src="фото начинок/сникерс.jpg" alt="Сникерс">
+                </div>
+                <div class="filling-content">
+                    <h3 class="filling-title">Сникерс</h3>
+                    <p class="filling-description">Уже классическая начинка: шоколадный бисквит, сырный крем, солёная
+                        карамель и арахис.
+                        Особый секрет - ореховая нуга. Советуем попробовать всем любителям батончика Сникерс.
+                    </p>
+                    <div class="filling-price">2200 руб/кг</div>
+                    <button class="order-btn" data-filling="Сникерс"
+                        data-description="Шоколадный бисквит, сырный крем, ореховая нуга и арахис в солёной карамели"
+                        data-price="2200">Заказать</button>
+                </div>
+            </div>
+
+            <!-- Начинка 5 -->
+            <div class="filling-card">
+                <div class="filling-image">
+                    <img src="фото начинок/ягодный мусс.jpg" alt="Ягодный мусс">
+                </div>
+                <div class="filling-content">
+                    <h3 class="filling-title">Ягодный мусс</h3>
+                    <p class="filling-description">Классический ванильный бисквит, сливочный крем-мусс
+                        и сочнейшая ягодная прослойка. Любимая начинка маленьких сладкоежек. Возможен выбор любой ягоды.
+                    </p>
+                    <div class="filling-price">2100 руб/кг</div>
+                    <button class="order-btn" data-filling="Ягодный мусс"
+                        data-description="Ванильный бисквит, сливочный крем-мусс и ягодная начинка"
+                        data-price="2100">Заказать</button>
+                </div>
+            </div>
+
+            <!-- Начинка 6 -->
+            <div class="filling-card">
+                <div class="filling-image">
+                    <img src="фото начинок/чёрная смородина.jpg" alt="Чёрная смородина">
+                </div>
+                <div class="filling-content">
+                    <h3 class="filling-title">Чёрная смородина</h3>
+                    <p class="filling-description">Влажный шоколадный бисквит, сливочно-сырный крем,
+                        чёрно-смородиновый мусс и сочная начинка из чёрной смородины. Торт для истинных ценителей этой
+                        ягоды.
+                    </p>
+                    <div class="filling-price">1800 руб/кг</div>
+                    <button class="order-btn" data-filling="Чёрная смородина"
+                        data-description="Шоколадный бисквит, сырный крем, мусс и сочная начинка из чёрной смородины"
+                        data-price="1800">Заказать</button>
+                </div>
+            </div>
+            
+        </div>
+
+
+    </main>
+
+
+    <!-- Модальное окно заказа -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title" id="modalFillingName"></h2>
+            <p class="modal-description" id="modalFillingDescription"></p>
+
+            <div class="weight-selector">
+                <label class="weight-label">Выберите вес (кг):</label>
+                <input type="range" id="weightSlider" class="weight-slider" min="1" max="7" step="0.5" value="1">
+                <div class="weight-value" id="weightValue"></div>
+            </div>
+
+            <div class="total-price" id="totalPrice"></div>
+
+            <button class="confirm-order" id="confirmOrder">Добавить в корзину</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© Свободный кондитер, 2025. Домашняя кондитерская.</p>
+        <div class="social-icons">
+            <a href="#" aria-label="Telegram">💬</a>
+            <a href="#" aria-label="VK">👥</a>
+            <a href="#" aria-label="WhatsApp">💬</a>
+        </div>
+        <p>Телефон: +7 (921) 383-33-XX</p>
+    </footer>
+
+    <script src="craft.js"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>

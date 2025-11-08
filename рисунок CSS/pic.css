@@ -1,0 +1,284 @@
+.container * {
+    box-sizing: content-box !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: initial !important;
+}
+
+.container {
+    box-sizing: content-box !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #88ba4b;
+    overflow: hidden;
+}
+
+
+.fillings-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.filling-image {
+    height: 20rem !important;
+    width: 100% !important;
+    background-color: #f8f8f8;
+    display: flex !important;
+    align-items: center ;
+    justify-content: center ;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+
+.pattern-up {
+    width: 109px;
+    height: 23px;
+    position: absolute;
+    top: 15px;
+    left: 46px;
+    display: flex;
+}
+
+.pattern-left {
+    width: 23px;
+    height: 109px;
+    position: absolute;
+    top: 25px;
+    left: 34px;
+    display: flex;
+    flex-flow: column-reverse;
+
+}
+
+
+.pattern-right {
+    width: 23px;
+    height: 109px;
+    position: absolute;
+    top: 25px;
+    left: 144px;
+    display: flex;
+    flex-flow: column-reverse;
+
+}
+
+
+.arc {
+    width: 17px;
+    height: 17px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+}
+
+
+.sky {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background: radial-gradient(circle at 60% 50%, #ffffff 0%, #5e70e4 80%);
+    top: 25px;
+    left: 45.5px;
+    border: 5px solid #ffffff;
+    overflow: hidden;
+}
+
+.sun {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #e0d320;
+    border: 3px solid #f7b417;
+    border-radius: 50%;
+    left: 70px;
+    top: -20px;
+
+}
+
+
+.middle {
+    position: relative;
+    width: 25px;
+    height: 55px;
+    background-color: #CD853F;
+    border-radius: 50%;
+    left: 85px;
+    top: 13px;
+}
+
+.teapot {
+    position: relative;
+    background: radial-gradient(circle at 30% 50%, #ffffff 0%, #e3554b 80%);
+    border-radius: 50%;
+    right: 15px;
+    top: -45px;
+}
+
+
+.teapot-middle {
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    background: radial-gradient(circle at 30% 40%, #ffffff 0%, #e3554b 50%);
+    border-radius: 50%;
+    left: 15px;
+    top: -13px;
+    z-index: 5;
+}
+
+.teapot-bot {
+    position: absolute;
+    width: 60px;
+    height: 45px;
+    background: radial-gradient(circle at 30% 50%, #ffffff 0%, #e3554b 60%);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.teapot-top {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #e3554b;
+    border-radius: 50%;
+    z-index: 4;
+    left: 25px;
+    top: -18px;
+}
+
+.teapot-hand {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid #e3554b;
+    z-index: 4;
+    left: 45px;
+    top: 5px;
+}
+
+.teapot-nouse {
+    position: absolute;
+    width: 30px;
+    height: 7px;
+    background-color: #e3554b;
+    z-index: 4;
+    left: -12px;
+    top: 8px;
+    transform: rotate(40deg);
+}
+
+
+
+.table {
+    position: absolute;
+    width: 100px;
+    height: 12px;
+    background-color: #CD853F;
+    right: -40px;
+    top: -4px;
+    z-index: 12;
+}
+
+
+.bot {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid #CD853F;
+    left: -8px;
+    top: 43px;
+
+}
+
+
+.chairs {
+    position: relative;
+    width: 180px;
+    height: 100px;
+    bottom: 57px;
+    left: 10px;
+    overflow: hidden;
+}
+
+.chair-left {
+    position: relative;
+    left: -30px;
+    bottom: 0px;
+
+}
+
+
+
+.chair-right {
+    position: relative;
+    bottom: 5px;
+    left: 28px;
+    transform: scaleX(-1);
+}
+
+.leg {
+    position: absolute;
+    background-color: #CD853F;
+    left: 63px;
+    top: 45px;
+    width: 5px;
+    height: 42px;
+
+}
+
+.seat {
+    position: relative;
+    background-color: #CD853F;
+    left: 47px;
+    top: 44px;
+    width: 24px;
+    height: 6px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.circle {
+    width: 4px;
+    height: 3px;
+    background-color: #925225;
+    border-radius: 50%;
+}
+
+
+.back {
+    position: absolute;
+    width: 50px;
+    height: 88px;
+    border-radius: 50%;
+    background-color: #CD853F;
+
+}
+
+.back::before {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 88px;
+    border-radius: 50%;
+    background-color: #88ba4b;
+
+}
