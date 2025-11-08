@@ -11,10 +11,6 @@
     padding: 0 !important;
 }
 
-body {
-    background-color: #f0f0f0;
-}
-
 .container {
     position: relative;
     width: 200px;
@@ -280,5 +276,6 @@ body {
     height: 88px;
     border-radius: 50%;
     background-color: #88ba4b;
+
 
 }
